@@ -32,7 +32,7 @@ print("Odd Numbers are: " + str(Odd))
 
 ### Playing with strings
 ```
-**# Operations with Lists/Strings**
+# Operations with Lists/Strings
 ```
 ```
 # slicing
@@ -55,7 +55,7 @@ coda
 rv
 ```
 ```
-**# Create a list and print it's index and item side by side**
+# Create a list and print it's index and item side by side
 
 x = [9, 0, 4]
 
