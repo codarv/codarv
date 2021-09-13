@@ -19,7 +19,7 @@ I could be reached [here](https://www.linkedin.com/in/arvind-dass-8a076740/)
 ### Below program depicts the use of comprehensive list and prints Even/Odd numbers for a given number range with minimum line of codes:
 
 ```
-# Print Even and Odd numbers using comprehensive list
+**# Print Even and Odd numbers using comprehensive list**
 
 num = int(input("Enter a number: "))   
 
@@ -32,7 +32,7 @@ print("Odd Numbers are: " + str(Odd))
 
 ### Playing with strings
 ```
-# Operations with Lists/Strings
+**# Operations with Lists/Strings**
 ```
 ```
 # slicing
@@ -45,7 +45,7 @@ print(x[3:])
 print(x[:-2])
 print(x[-2:])
 ```
-### Output:
+#### Output:
 ```
 odar
 cdr
@@ -55,7 +55,7 @@ coda
 rv
 ```
 ```
-# Create a list and print it's index and item side by side
+**# Create a list and print it's index and item side by side**
 
 x = [9, 0, 4]
 
@@ -67,7 +67,7 @@ for item in x:
 for index, item in enumerate(x):
     print(index, item)
 ```
-### Output:
+#### Output:
 ```
 9
 0
