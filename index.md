@@ -108,4 +108,8 @@ print(sum(sorted(GList)[-2:]))
 
 print(sum(sorted(GList)[:2]))
 ```
-
+#### Output
+```
+107
+6
+```
