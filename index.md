@@ -99,4 +99,13 @@ i: 14
 o: 5
 u: 6
 ```
+```
+# Find the sum of two max numbers, two min numbers.
+
+GList = [10, 8, 9, 1, 87, 12, 6, 20, 5]
+
+print(sum(sorted(GList)[-2:]))
+
+print(sum(sorted(GList)[:2]))
+```
 
