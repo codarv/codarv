@@ -30,4 +30,32 @@ print("Even numbers are: " + str(Even))
 print("Odd Numbers are: " + str(Odd))
 ```
 
-# 
+# Playing with strings
+```
+# Operations with Lists/Strings
+```
+```
+# slicing
+x = 'codarv'
+
+print(x[1:5])
+print(x[:6:2])
+print(x[:3])
+print(x[3:])
+print(x[:-2])
+print(x[-2:])
+```
+
+```
+# Create a list and print it's index and item side by side
+
+x = [9, 0, 4]
+
+# item
+for item in x:
+    print(item)
+    
+#index & item
+for index, item in enumerate(x):
+    print(index, item)
+```
