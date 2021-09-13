@@ -76,4 +76,18 @@ for index, item in enumerate(x):
 1 0
 2 4
 ```
+```
+# Count all occurences of each vowel in the given paragraph
 
+Para = "The key difference between the tuples and lists is that while the tuples are immutable objects the lists are mutable. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists."
+
+ParaList = Para.split()
+y = 0
+# print(ParaList)
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+for x in vowels:
+    y = Para.count(x)
+    print(str(x) + ":" + str(y))
+```
