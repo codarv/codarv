@@ -30,7 +30,7 @@ print("Even numbers are: " + str(Even))
 print("Odd Numbers are: " + str(Odd))
 ```
 
-# Playing with strings
+### Playing with strings
 ```
 # Operations with Lists/Strings
 ```
@@ -45,7 +45,15 @@ print(x[3:])
 print(x[:-2])
 print(x[-2:])
 ```
-
+### Output:
+```
+odar
+cdr
+cod
+arv
+coda
+rv
+```
 ```
 # Create a list and print it's index and item side by side
 
@@ -59,3 +67,13 @@ for item in x:
 for index, item in enumerate(x):
     print(index, item)
 ```
+### Output:
+```
+9
+0
+4
+0 9
+1 0
+2 4
+```
+
