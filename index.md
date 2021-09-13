@@ -8,15 +8,15 @@ Let the journey of Alphabets to Binary begin!
 
 [My git page](https://github.com/codarv/codarv)
 
-## Contact
+### Contact
 I could be reached [here](https://www.linkedin.com/in/arvind-dass-8a076740/)
 
 --------------------------------------------------------------------------------------
-Let's Begin!!
+## Let's Begin!!
 
 --------------------------------------------------------------------------------------
 
-# Below program depicts the use of comprehensive list and prints Even/Odd numbers for a given number range with minimum line of codes:
+### Below program depicts the use of comprehensive list and prints Even/Odd numbers for a given number range with minimum line of codes:
 
 ```
 # Print Even and Odd numbers using comprehensive list
@@ -30,3 +30,4 @@ print("Even numbers are: " + str(Even))
 print("Odd Numbers are: " + str(Odd))
 ```
 
+# 
