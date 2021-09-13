@@ -88,15 +88,15 @@ y = 0
 vowels = ['a', 'e', 'i', 'o', 'u']
 
 for x in vowels:
-    y = Para.count(x)
-    print(str(x) + ":" + str(y))
+    y = Para.lower().count(x)
+    print(str(x) + ": " + str(y))
 ```
 #### Output
 ```
-a:13
-e:34
-i:14
-o:5
-u:6
+a: 13
+e: 34
+i: 14
+o: 5
+u: 6
 ```
 
