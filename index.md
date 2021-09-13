@@ -16,11 +16,8 @@ I could be reached [here](https://www.linkedin.com/in/arvind-dass-8a076740/)
 
 --------------------------------------------------------------------------------------
 
-### Below program depicts the use of comprehensive list and prints Even/Odd numbers for a given number range with minimum line of codes:
-
+### Print Even and Odd numbers using comprehensive list**
 ```
-**# Print Even and Odd numbers using comprehensive list**
-
 num = int(input("Enter a number: "))   
 
 Even = [x for x in range(num) if x > 0 and x % 2 == 0]
@@ -30,10 +27,7 @@ print("Even numbers are: " + str(Even))
 print("Odd Numbers are: " + str(Odd))
 ```
 
-### Playing with strings
-```
-# Operations with Lists/Strings
-```
+### Operations with Lists/Strings
 ```
 # slicing
 x = 'codarv'
@@ -54,9 +48,9 @@ arv
 coda
 rv
 ```
-```
-# Create a list and print it's index and item side by side
 
+### Create a list and print it's index and item side by side
+```
 x = [9, 0, 4]
 
 # item
@@ -76,15 +70,11 @@ for index, item in enumerate(x):
 1 0
 2 4
 ```
+### Count occurences of each vowel in the given paragraph
 ```
-# Count all occurences of each vowel in the given paragraph
-
 Para = "The key difference between the tuples and lists is that while the tuples are immutable objects the lists are mutable. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists."
 
-ParaList = Para.split()
 y = 0
-# print(ParaList)
-
 vowels = ['a', 'e', 'i', 'o', 'u']
 
 for x in vowels:
@@ -99,9 +89,9 @@ i: 14
 o: 5
 u: 6
 ```
-```
-# Find the sum of two max numbers, two min numbers.
 
+### Find the sum of two max numbers, two min numbers in the given List.
+```
 GList = [10, 8, 9, 1, 87, 12, 6, 20, 5]
 
 print(sum(sorted(GList)[-2:]))
