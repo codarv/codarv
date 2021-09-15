@@ -103,3 +103,41 @@ print(sum(sorted(GList)[:2]))
 107
 6
 ```
+
+### Program to send custom email
+```
+import smtplib
+import ssl
+
+smtp_server = "smtp.gmail.com"
+port = 587  # For starttls
+sender_email = "codarvtest@gmail.com"
+password = input("Type your password and press enter: ")
+
+# Create a secure SSL context
+context = ssl.create_default_context()
+
+# Try to log in to server and send email
+try:
+    server = smtplib.SMTP(smtp_server, port)
+    server.ehlo()  # Can be omitted
+    server.starttls(context=context)  # Secure the connection
+    server.ehlo()  # Can be omitted
+    server.login(sender_email, password)
+    name = sender_email.split('@')[0]
+    print(name)
+    # TODO: Send email here
+    subject = 'Saying Hello from Python'
+    body = 'Hi ' + name + "," + "\nThis is a test message from Python"
+
+    msg = f'Subject: {subject}\n\n{body}'
+
+    server.sendmail(sender_email, sender_email, msg)
+
+except Exception as e:
+    # Print any error messages to stdout
+    print(e)
+finally:
+    server.quit()
+```
+
