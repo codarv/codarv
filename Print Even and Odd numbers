@@ -1,9 +1,0 @@
-# Print Even and Odd numbers using comprehensive list
-
-num = int(input("Enter a number: "))   
-
-Even = [x for x in range(num) if x > 0 and x % 2 == 0]
-Odd = [x for x in range(num) if x > 0 and x % 2 != 0]
-
-print("Even numbers are: " + str(Even))
-print("Odd Numbers are: " + str(Odd))
