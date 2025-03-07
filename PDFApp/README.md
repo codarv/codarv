@@ -26,7 +26,19 @@ install.packages("pdftools")
 install.packages("tcltk")
 ```
 
-## Usage
+## Installation
+
+To install all necessary components for this application to work, use the `install_dependencies.sh` script. This script will install R, the required R packages, and any other dependencies.
+
+### Running the Installation Script
+
+1. Open a terminal.
+2. Navigate to the directory containing the `install_dependencies.sh` script.
+3. Run the script using the following command:
+
+```bash
+./install_dependencies.sh
+```
 
 ### Running the Application
 
@@ -37,28 +49,28 @@ To run the application, use the `runpdfapp` script. This script provides a menu 
 3. Run the script using the following command:
 
 ```bash
-./runpdfapp
+./run-pdf-app
 ```
 
 ### Creating an Alias
 
-To make it easier to run the `runpdfapp` script from any directory, you can create an alias. Add the following line to your shell configuration file (e.g., `.bashrc`, `.zshrc`, or `.bash_profile`):
+To make it easier to run the `run-pdf-app.sh` script from any directory, you can create an alias. Add the following line to your shell configuration file (e.g., `.bashrc`, `.zshrc`, or `.bash_profile`):
 
 ```bash
-alias runpdfapp='/path/to/your/script/runpdfapp'
+alias runpdfapp='/path/to/your/script/run-pdf-app.sh'
 ```
 
-Replace `/path/to/your/script` with the actual path to the directory containing the `runpdfapp` script. After adding the alias, reload your shell configuration file:
+Replace `/path/to/your/script` with the actual path to the directory containing the `run-pdf-app` script. After adding the alias, reload your shell configuration file:
 
 ```bash
 source ~/.bashrc  # or source ~/.zshrc, source ~/.bash_profile
 ```
 
-Now you can run the `runpdfapp` script from any directory by simply typing `runpdfapp` in the terminal.
+Now you can run the `run-pdf-app` script from any directory by simply typing `runpdfapp` in the terminal.
 
 ### Menu Options
 
-When you run the `runpdfapp` script, you will see the following menu:
+When you run the `runpdfapp` command, you will see the following menu:
 
 ```
 Select an option:
