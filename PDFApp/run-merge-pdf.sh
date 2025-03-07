@@ -17,7 +17,11 @@ echo "Shiny app should be running at: $shiny_url"
 if [ -n "$shiny_url" ] && curl --output /dev/null --silent --head --fail "$shiny_url"; then
   echo "Shiny app is running. Opening in browser..."
   # Open the default web browser to the Shiny app's URL
-  open "$shiny_url"
+  if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    start "$shiny_url"
+  else
+    open "$shiny_url"
+  fi
 else
   echo "Shiny app is not running. Please check for errors."
 fi

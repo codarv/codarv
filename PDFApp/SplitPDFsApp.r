@@ -106,7 +106,11 @@ server <- function(input, output, session) {
       })
 
       # Open the target directory
-      system(paste("open", target_dir))
+      if (.Platform$OS.type == "windows") {
+        shell.exec(target_dir)
+      } else {
+        system(paste("open", target_dir))
+      }
     }, error = function(e) {
       showModal(modalDialog(
         title = "Error",
