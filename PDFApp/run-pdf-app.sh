@@ -11,11 +11,19 @@ read -p "Enter your choice [1-2]: " choice
 case $choice in
   1)
     echo "Starting PDF Merger..."
-    "$SCRIPT_DIR/run-merge-pdf.sh"
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+      Rscript -e "shiny::runApp('$SCRIPT_DIR/MergePDFsApp.r')"
+    else
+      "$SCRIPT_DIR/run-merge-pdf.sh"
+    fi
     ;;
   2)
     echo "Starting PDF Splitter..."
-    "$SCRIPT_DIR/run-split-pdf.sh"
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+      Rscript -e "shiny::runApp('$SCRIPT_DIR/SplitPDFsApp.r')"
+    else
+      "$SCRIPT_DIR/run-split-pdf.sh"
+    fi
     ;;
   *)
     echo "Invalid choice. Exiting."
